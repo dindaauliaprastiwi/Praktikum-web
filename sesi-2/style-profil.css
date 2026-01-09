@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f6efe6, #e4cfae);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Background shapes */
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.shape1 {
+    width: 300px;
+    height: 300px;
+    background: #c7a17a;
+    top: -80px;
+    left: -80px;
+}
+
+.shape2 {
+    width: 220px;
+    height: 220px;
+    background: #8b5e3c;
+    bottom: -60px;
+    right: -60px;
+}
+
+.profile-card {
+    position: relative;
+    background: #fff7ec;
+    width: 360px;
+    padding: 35px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(90, 60, 30, 0.3);
+    z-index: 2;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #8b5e3c, #c7a17a);
+    color: white;
+    padding: 5px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.foto {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #c8a57a;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #5a3e2b;
+    font-size: 23px;
+}
+
+.role {
+    color: #8b6b4f;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.biodata {
+    background: linear-gradient(135deg, #f1e3cf, #ead4b2);
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.biodata p {
+    color: #5a3e2b;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.sosial {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sosial a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #8b5e3c;
+    background: #efe0c6;
+    padding: 6px 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.sosial a:hover {
+    background: #c7a17a;
+    color: white;
+}
+
+.btn {
+    background: linear-gradient(135deg, #8b5e3c, #c8a57a);
+    color: white;
+    border: none;
+    padding: 11px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #6f4324, #a97c50);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,56 @@
+<body>
+    <h1 id="uji_heading"
+    onmouseover="sorot(this)"
+    onmouseout="keluarsorot(this)">
+        sorot dong!
+    </h1>
+
+    <h2 id="uji_klik" onmousedown="tahan(tis)" onmouseup="lepas(this)">
+        klik dong!
+    </h2>
+
+    <label for="uji_input">uji coba input</label><br>
+    <input type="text" id="uji_input" onkeyup="tiru()"><br>
+    <span id="uji_spam"></span><br>
+    <button onclick="klik()">klik</button>
+    <button onclick="ulangi()">ulangi</button>
+
+    <script>
+        function sorot(obj){
+            obj.innerHTML = "sudah disorot";
+        }
+        function keluarSorot(obj){
+            obj.innerHTML = "Sorot Lagi Dong!";
+        }
+        function tahan(obj){
+            obj.innerHTML= "Lepasin..."
+        }
+        function lepas(obj){
+            obj.innerHTML = "Klik Lagi Dong!"
+        }
+        function klik(){
+            valueInput = document.getElementById('uji_input'), value;
+            document.getElementById('uji_spam').innerHTML = valueInput;
+
+            if (valueInput==""){
+                span.innerHTML = "Inputan kosong";
+                span.style = "color:red";
+            } else {
+                span.innerHTML = "input : '"+valueInput+"'";
+                span.style = "color:blue";
+            }
+        }
+        function ulangi(){
+            document.getElementById('uji_input').value = "";
+            document.getElementById('uji_span').innerHTML = "";
+            document.getElementById('uji_heading').innerHTML = "Sorot Dong!";
+            document.getElementById('uji_klik').innerHTML = "Klik dong!";
+        }
+        function tiru(){
+            valueInput = document.getElementById('uji_input').value;
+            document.getElementById('uji_span').innerHTML = valueInput;
+        }
+
+    
+    </script>
+</body>
